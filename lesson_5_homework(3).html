@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        p {
+            font-size: 2em;
+            text-align: center;
+            color: white;
+            padding: 1.5em;
+        }
+        
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-1 {
+            flex-basis: 20%;
+            background-color: skyblue;
+        }
+
+        .container-2 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .top-container-1 {
+            flex-basis: 20%;
+            background-color: rgb(177, 57, 57);
+        }
+
+        .down-table-container-2 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .container-col-1 {
+            background-color: rgb(31, 31, 182);
+        }
+
+        .container-col-2 {
+            background-color: rgb(41, 172, 2);
+        }
+    </style>
+    <body>
+    <div class="container-1">
+        <h1>Меню</h1>
+    </div>
+    <div class="container-2">
+        <div class="top-container-1">
+            <h1>Заголовок</h1>
+        </div>
+        <div class="down-table-container-2">
+            <div class="container-col-1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quaerat ad cum voluptas fugiat,
+                    repellendus doloribus.</p>
+            </div>
+            <div class="container-col-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quaerat ad cum voluptas fugiat,
+                    repellendus doloribus.</p>
+            </div>
+        </div>
+    </div>
+    </body></html>
+    </html>
