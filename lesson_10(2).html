@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #8bd3c5;
+        overflow: hidden;
+        }
+    h1{
+        color: orange;
+    }
+    font-face{
+        font-family:leckerli;
+        src: url("leckerli.ttf") format("opentype")
+    }
+    h1{
+        font-family: leckerli,cursive;
+        font-size: 4em;
+        color: orange;
+        z-index: 100;
+        text-shadow:  -2px 0 white, 0 2px white, 2px 0, 0 -2px white;
+    }
+    .flower-1{
+        background-image: url('flower1.png');
+        background-size: cover;
+        background-position: center;
+        top:-150px;
+        position: absolute;
+    }
+    .flower-2{
+        background-image: url('flower2.png');
+        background-size: cover;
+        background-position: center;
+        top:-150px;
+        position: absolute;
+     }
+    .flower-3{
+        background-image: url('flower3.png');
+        background-size: cover;
+        background-position: center;
+        top:-150px;
+        position: absolute;
+    }
+    @keyframes falling{
+        to{
+            top: 100vh;
+            transform: rotate(720deg);
+        }
+    }
+    div:nth-of-type(1) {
+        left: 11vw;
+        width: 150px;
+        height: 150px;
+        animation: falling 12s 2.7s linear infinite;
+        z-index: 9999;
+    }
+    div:nth-of-type(2) {
+        left: 59vw;
+        width: 90px;
+        height: 90px;
+        animation: falling 16s 1.2s linear infinite;
+    }
+    div:nth-of-type(3) {
+        left:79vw;
+        width: 100px;
+        height: 100px;
+        animation: falling 22s 2.8s linear infinite;
+    }
+    div:nth-of-type(4) {
+        left: 19vw;
+        width: 125px;
+        height: 125px;
+        animation: falling 10s 1.6s linear infinite;
+    }
+</style>
+<body>
+    <div class="flower-1"></div>
+    <div class="flower-1"></div>
+    <div class="flower-1"></div>
+    <div class="flower-2"></div>
+    <div class="flower-2"></div>
+    <div class="flower-2"></div>
+    <div class="flower-3"></div>
+    <div class="flower-3"></div>
+    <div class="flower-3"></div>
+    <h1>Всё для тебя!</comming></h1>
+</body>
+</html>
