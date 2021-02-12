@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(38, 39, 53);
+    }
+    .loader {
+        border-radius: 50%;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border:4px solid rgb(38, 39, 53);
+        overflow: hidden;
+        box-shadow: -10px -10px 15px rgb(59,59,59),
+                    10px 10px 10px rgba(0,0,0,01),
+                    inset -10px 15px rgba(51,49,49,0.5),
+                    inset 10px 10px 10px rgba(0,0,0,01);
+        z-index: -1;
+        animation: loader 0.5s linear infinite;
+        background: linear-gradient(rgb(48, 45, 214),rgb(190, 104, 104),rgb(233, 157, 34))
+    }
+    @keyframes loader{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    .loader::before{
+        content:'';
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        right: 25px;
+        bottom: 25px;
+        background-color: rgb(38, 39, 53);
+        border-radius: 50%;
+        box-shadow: inset -10px -10px 15px rgba(51,49,49,0.5),
+                    inset 10px 10px 10px rgba(0,0,0,01);
+    }
+</style>
+<body>
+    <div class="loader">
+        <span></span>
+    </div>
+</body>
+</html>
