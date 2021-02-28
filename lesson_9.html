@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        background-color: azure;
+        font-size: 1em;
+    }
+    h1:hover{
+        background-color: brown;
+        font-size: 2em;
+    }
+    input[type=text]{
+        background-color: darksalmon;
+    }
+    input[type=text]:focus{
+        background-color:darkred;
+    }
+    a:active {
+        background-color: red;
+    }
+    a:visited {
+        color: red;
+    }
+    a:link{
+        color: blueviolet;
+    }
+    .block{ 
+        width: 200px;
+        height: 200px;
+        color: wheat;
+        background-color:teal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        white-space:  nowrap; ;
+        position: relative;
+    }
+    .block::before {
+        content:' ';
+        width: 90%;
+        height: 5px;
+        background-color: white;
+        top: 10%;
+        position: absolute;
+    }
+    .block::after{
+        content: '';
+        position:absolute;
+        width: 90%;
+        height: 5px;
+        background-color: white;
+        bottom: 10%;
+    }
+    .popup{
+        display: inline-block;
+        font-size: 2.25em;
+        padding: 1em;
+        color: white;
+        position:relative;;
+        border-radius:5px;
+        background-color:rebeccapurple ;
+
+    }
+    .popup:hover:after{
+        content:'всплывающее окно';
+        position: absolute;
+        padding:1em;
+        top:50%;
+        left:25%;
+        border-radius: 5px;
+        white-space: nowrap;
+        background-color: seagreen;
+        color: rebeccapurple;
+
+    }
+</style>
+<body>
+    <h1>1</h1>
+    <form action="">
+        <input type="text" name="" id="text-input">
+        <input type="submit" value="поиск">
+    </form>
+    <a href="active.html">простая ссылка</a>
+    <a href="not_active.html">простая ссылка</a>
+    <div class="block">просто текст</div>
+    <div class="popup">Наведи на меня курсор </div>
+</body>
+</html>

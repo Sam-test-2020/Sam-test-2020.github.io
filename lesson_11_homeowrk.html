@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        
+        margin: 0;
+    }
+    .bigimg-1{
+        background-image:url("3612422329-bezmyatezhnost-7XNj-1920x1080-MM-100.jpg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position:center ;
+        background-size: cover; 
+        opacity: 0.95;
+        background-attachment: fixed;
+        display: flex;  
+        align-items: center; 
+        justify-content: center;
+        }
+    .bigimg-2{
+        background-image:url("31-316335_field.jpg");
+        height: 100vh;   
+        background-repeat: no-repeat;
+        background-position:center ;
+        background-size: cover; 
+        opacity: 0.95; 
+        background-attachment: fixed;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+    .border{
+        padding: 2em;
+        font-weight:  900px; 
+        text-align:center ;
+        font-size: 1em;
+        background-color: rgb(85, 110, 110);
+        color: white;
+    }
+    @keyframes falling_down{
+        0%{
+            top:-5px;
+        }
+        100%{
+            top: 201vh;
+        }
+    }
+    .object{
+        position: absolute;
+        background-color: white;
+        top: 0;
+    }
+    .object:nth-child(1) {
+        width: 3px;
+        height: 3px;
+        left: 5vw;
+        animation: falling_down 5s .2s linear infinite;
+    }
+    .object:nth-child(2) {
+        width: 3px;
+        height: 3px;
+        left: 15vw;
+        animation: falling_down 5.5s 5s linear infinite;
+    }
+    .object:nth-child(3) {
+        width: 3px;
+        height: 3px;
+        left: 40vw;
+        animation: falling_down 4.5s 2s linear infinite;
+    }
+    .object:nth-child(4) {
+        width: 3px;
+        height: 3px;
+        left: 60vw;
+        animation: falling_down 4s 5s linear infinite;
+    }
+    .object:nth-child(5) {
+        width: 3px;
+        height: 3px;
+        left: 80vw;
+        animation: falling_down 3.75s 1s linear infinite;
+    }                   
+</style>
+<body>
+    <div class ="bigimg-1"></div>
+    <div>
+        <div class="border">СДЕЛАЙ САМ! НЕ ПОДСМАТРИВАЙ В КОНСОЛЬ РАЗРАБОТЧИКА!</div>
+    </div>
+    <div class="bigimg-2"></div>
+
+    <div class="object"></div>
+    <div class="object"></div>
+    <div class="object"></div>
+    <div class="object"></div>
+    <div class="object"></div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        margin: 0;
+    }
+    .bigimg-1{
+        background-image: url("img_parallax.jpg");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position:center ;
+        background-size: cover; 
+        opacity: 0.95;
+        background-attachment: fixed;
+        display: flex;  
+        align-items: center; 
+        justify-content: center;
+        }
+    .bigimg-2{
+        background-image: url("img_parallax2.jpg");
+        height: 100vh;   
+        background-repeat: no-repeat;
+        background-position:center ;
+        background-size: cover; 
+        opacity: 0.95; 
+        background-attachment: fixed;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        
+        
+    }   
+    .border{
+        background-color: azure;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.25em;
+        font-weight: 900;
+        font-size: 2em;
+    } 
+    div p{
+        padding:1.75em ;
+        margin:0 ;
+        color: cornsilk;
+        background-color:black ;
+        font-weight: 600;
+        font-size:1.25em ;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class ="bigimg-1">
+        <div class="caption">
+            <span class="border">Прокрути вниз</span>
+        </div>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <div class="bigimg-2">
+        <div class="caption">   
+        <span class="border"> это параллакс</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
