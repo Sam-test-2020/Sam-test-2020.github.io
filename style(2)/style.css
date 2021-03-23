@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+
+}
+.red,.purple,.cyan{
+    height: 250px;
+    width: 250px;
+}
+.red{
+    background-color: brown;
+}
+.purple{
+    background-color:darkslateblue;
+}
+.cyan{
+    background-color:darkturquoise;
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
